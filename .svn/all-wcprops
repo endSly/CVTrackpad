@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svnroot/cvtrackpad/!svn/ver/36
+END
+qrc_CVTrackPadResource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/34/qrc_CVTrackPadResource.cpp
+END
+ui_StartScreen.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/cvtrackpad/!svn/ver/34/ui_StartScreen.h
+END
+CVTrackpad.pro
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/cvtrackpad/!svn/ver/33/CVTrackpad.pro
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svnroot/cvtrackpad/!svn/ver/1/LICENSE
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svnroot/cvtrackpad/!svn/ver/1/AUTHORS
+END
+MainWindow.ui
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/cvtrackpad/!svn/ver/32/MainWindow.ui
+END
+object_script.CVTrackpad.Release
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/cvtrackpad/!svn/ver/32/object_script.CVTrackpad.Release
+END
+moc_MainWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/cvtrackpad/!svn/ver/34/moc_MainWindow.cpp
+END
+Makefile.Release
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/cvtrackpad/!svn/ver/32/Makefile.Release
+END
+MainWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/cvtrackpad/!svn/ver/36/MainWindow.cpp
+END
+CVTrackpad.pro.user
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/cvtrackpad/!svn/ver/36/CVTrackpad.pro.user
+END
+ui_MainWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/cvtrackpad/!svn/ver/34/ui_MainWindow.h
+END
+object_script.CVTrackpad.Debug
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/cvtrackpad/!svn/ver/32/object_script.CVTrackpad.Debug
+END
+moc_ImageViewWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/cvtrackpad/!svn/ver/34/moc_ImageViewWidget.cpp
+END
+MainWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/cvtrackpad/!svn/ver/36/MainWindow.h
+END
+Makefile.Debug
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/cvtrackpad/!svn/ver/32/Makefile.Debug
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/cvtrackpad/!svn/ver/27/main.cpp
+END
+moc_CameraDeviceDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/34/moc_CameraDeviceDialog.cpp
+END
+moc_TrayIcon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/cvtrackpad/!svn/ver/34/moc_TrayIcon.cpp
+END
+ui_CameraDeviceDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/cvtrackpad/!svn/ver/34/ui_CameraDeviceDialog.h
+END
+moc_StartScreen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/cvtrackpad/!svn/ver/34/moc_StartScreen.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/cvtrackpad/!svn/ver/36/Makefile
+END
+CVTrackPadResource.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/cvtrackpad/!svn/ver/32/CVTrackPadResource.qrc
+END

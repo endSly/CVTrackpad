@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CVTrackpad: Fichero Fuente OpticalFlow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>OpticalFlow.h</h1><a href="OpticalFlow_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*-</span>
+<a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2009 Ander Suarez and Endika Gutiérrez</span>
+<a name="l00003"></a>00003 <span class="comment"> * All rights reserved.</span>
+<a name="l00004"></a>00004 <span class="comment"> *</span>
+<a name="l00005"></a>00005 <span class="comment"> * Redistribution and use in source and binary forms, with or without</span>
+<a name="l00006"></a>00006 <span class="comment"> * modification, are permitted provided that the following conditions</span>
+<a name="l00007"></a>00007 <span class="comment"> * are met:</span>
+<a name="l00008"></a>00008 <span class="comment"> * 1. Redistributions of source code must retain the above copyright</span>
+<a name="l00009"></a>00009 <span class="comment"> *    notice, this list of conditions and the following disclaimer.</span>
+<a name="l00010"></a>00010 <span class="comment"> * 2. Redistributions in binary form must reproduce the above copyright</span>
+<a name="l00011"></a>00011 <span class="comment"> *    notice, this list of conditions and the following disclaimer in the</span>
+<a name="l00012"></a>00012 <span class="comment"> *    documentation and/or other materials provided with the distribution.</span>
+<a name="l00013"></a>00013 <span class="comment"> * 3. Neither the name of copyright holders nor the names of its</span>
+<a name="l00014"></a>00014 <span class="comment"> *    contributors may be used to endorse or promote products derived</span>
+<a name="l00015"></a>00015 <span class="comment"> *    from this software without specific prior written permission.</span>
+<a name="l00016"></a>00016 <span class="comment"> *</span>
+<a name="l00017"></a>00017 <span class="comment"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<a name="l00018"></a>00018 <span class="comment"> * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED</span>
+<a name="l00019"></a>00019 <span class="comment"> * TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR</span>
+<a name="l00020"></a>00020 <span class="comment"> * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL COPYRIGHT HOLDERS OR CONTRIBUTORS</span>
+<a name="l00021"></a>00021 <span class="comment"> * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span>
+<a name="l00022"></a>00022 <span class="comment"> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span>
+<a name="l00023"></a>00023 <span class="comment"> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span>
+<a name="l00024"></a>00024 <span class="comment"> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span>
+<a name="l00025"></a>00025 <span class="comment"> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span>
+<a name="l00026"></a>00026 <span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<a name="l00027"></a>00027 <span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span>
+<a name="l00028"></a>00028 <span class="comment"> */</span>
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="comment">/*</span>
+<a name="l00032"></a>00032 <span class="comment"> *  OpticalFlow.h</span>
+<a name="l00033"></a>00033 <span class="comment"> *  cppTest</span>
+<a name="l00034"></a>00034 <span class="comment"> *</span>
+<a name="l00035"></a>00035 <span class="comment"> *  Created by Endika Gutiérrez Salas on 21/12/08.</span>
+<a name="l00036"></a>00036 <span class="comment"> *  Copyright 2008 Univerity of Deusto. All rights reserved.</span>
+<a name="l00037"></a>00037 <span class="comment"> *</span>
+<a name="l00038"></a>00038 <span class="comment"> */</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="preprocessor">#ifndef OpticalFlow_h</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span><span class="preprocessor">#define OpticalFlow_h</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span>
+<a name="l00043"></a>00043 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="preprocessor">#include "<a class="code" href="OpenCV_8h.html">include/OpenCV.h</a>"</span>
+<a name="l00046"></a>00046 <span class="preprocessor">#include "<a class="code" href="Image_8h.html">Image.h</a>"</span>
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="keyword">namespace </span>OpenCV {
+<a name="l00049"></a>00049     <span class="keyword">using namespace </span>Bitmap;
+<a name="l00050"></a><a class="code" href="namespaceOpenCV_1_1VectorizedGraphics.html">00050</a>     <span class="keyword">namespace </span>VectorizedGraphics {
+<a name="l00051"></a>00051         
+<a name="l00052"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">00052</a>         <span class="keyword">struct </span><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a> {
+<a name="l00053"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">00053</a>             CvPoint2D32f <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>, <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>;
+<a name="l00054"></a>00054             
+<a name="l00055"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#a4b2498a5581e9fcab1639d0f9f78b82">00055</a>             <span class="keyword">inline</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#a4b2498a5581e9fcab1639d0f9f78b82">Vector2D32f</a>() {
+<a name="l00056"></a>00056                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x = 0.0f;
+<a name="l00057"></a>00057                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y = 0.0f;
+<a name="l00058"></a>00058                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x = 0.0f;
+<a name="l00059"></a>00059                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y = 0.0f;
+<a name="l00060"></a>00060             }
+<a name="l00061"></a>00061             
+<a name="l00062"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#562f514baf7a5cf3a6380f9b2d19b60c">00062</a>             <span class="keyword">inline</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#562f514baf7a5cf3a6380f9b2d19b60c">operator+</a>(<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a>&amp; vAdd) {
+<a name="l00063"></a>00063                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a> v;
+<a name="l00064"></a>00064                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x + vAdd.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x;
+<a name="l00065"></a>00065                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y + vAdd.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y;
+<a name="l00066"></a>00066                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x + vAdd.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x;
+<a name="l00067"></a>00067                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y + vAdd.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y;
+<a name="l00068"></a>00068                 <span class="keywordflow">return</span> v;
+<a name="l00069"></a>00069             }
+<a name="l00070"></a>00070             
+<a name="l00071"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#75578b9424b4b77a758d716d1ef81f87">00071</a>             <span class="keyword">inline</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a>&amp; <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#75578b9424b4b77a758d716d1ef81f87">operator+=</a>(<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a>&amp; vAdd) {
+<a name="l00072"></a>00072                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x += vAdd.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x;
+<a name="l00073"></a>00073                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y += vAdd.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y;
+<a name="l00074"></a>00074                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x += vAdd.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x;
+<a name="l00075"></a>00075                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y += vAdd.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y;
+<a name="l00076"></a>00076                 <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00077"></a>00077             }
+<a name="l00078"></a>00078             
+<a name="l00079"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#2bf782a5776ade5aa2b63f83666c8510">00079</a>             <span class="keyword">inline</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#2bf782a5776ade5aa2b63f83666c8510">operator-</a>(<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a>&amp; vSub) {
+<a name="l00080"></a>00080                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a> v;
+<a name="l00081"></a>00081                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x - vSub.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x;
+<a name="l00082"></a>00082                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y - vSub.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y;
+<a name="l00083"></a>00083                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x - vSub.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x;
+<a name="l00084"></a>00084                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y - vSub.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y;
+<a name="l00085"></a>00085                 <span class="keywordflow">return</span> v;
+<a name="l00086"></a>00086             }
+<a name="l00087"></a>00087             
+<a name="l00088"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#3db0ba36f29815d4f84632ab8cf0d10b">00088</a>             <span class="keyword">inline</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a>&amp; <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#3db0ba36f29815d4f84632ab8cf0d10b">operator-=</a>(<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a>&amp; vSub) {
+<a name="l00089"></a>00089                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x -= vSub.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x;
+<a name="l00090"></a>00090                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y -= vSub.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y;
+<a name="l00091"></a>00091                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x -= vSub.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x;
+<a name="l00092"></a>00092                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y -= vSub.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y;
+<a name="l00093"></a>00093                 <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00094"></a>00094             }
+<a name="l00095"></a>00095             
+<a name="l00096"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#7cb8da8ade188387e63eec981b4d45b5">00096</a>             <span class="keyword">inline</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#7cb8da8ade188387e63eec981b4d45b5">operator/</a>(<span class="keywordtype">float</span> n) {
+<a name="l00097"></a>00097                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a> v;
+<a name="l00098"></a>00098                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x / n;
+<a name="l00099"></a>00099                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y / n;
+<a name="l00100"></a>00100                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x / n;
+<a name="l00101"></a>00101                 v.<a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y = <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y / n;
+<a name="l00102"></a>00102                 <span class="keywordflow">return</span> v;
+<a name="l00103"></a>00103             }
+<a name="l00104"></a>00104             
+<a name="l00105"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#034c2450f311359df3b749f4a61ae058">00105</a>             <span class="keyword">inline</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html">Vector2D32f</a>&amp; <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#034c2450f311359df3b749f4a61ae058">operator/=</a>(<span class="keywordtype">float</span> n) {
+<a name="l00106"></a>00106                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x /= n;
+<a name="l00107"></a>00107                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y /= n;
+<a name="l00108"></a>00108                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x /= n;
+<a name="l00109"></a>00109                 <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y /= n;
+<a name="l00110"></a>00110                 <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00111"></a>00111             }
+<a name="l00112"></a>00112             
+<a name="l00113"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#219978a22162841fd4acffa33c517a79">00113</a>             <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#219978a22162841fd4acffa33c517a79">dx</a>() { <span class="keywordflow">return</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.x - <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.x; }
+<a name="l00114"></a>00114             
+<a name="l00115"></a><a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#22b5426503e185dfa20dc116e1fee6ff">00115</a>             <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#22b5426503e185dfa20dc116e1fee6ff">dy</a>() { <span class="keywordflow">return</span> <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#c2c737d08150e5f26b5bbf9b954ca95f">p1</a>.y - <a class="code" href="structOpenCV_1_1VectorizedGraphics_1_1Vector2D32f.html#f6f90318443b4ed2af7dd5267da52d5c">p0</a>.y; }
+<a name="l00116"></a>00116             
+<a name="l00117"></a>00117         };
+<a name="l00118"></a>00118         
+<a name="l00119"></a><a class="code" href="namespaceOpenCV_1_1VectorizedGraphics.html#f6fd20b9b00e9903b75f637ea73c967d">00119</a>         <span class="keyword">typedef</span> std::vector&lt;Vector2D32f&gt; <a class="code" href="namespaceOpenCV_1_1VectorizedGraphics.html#f6fd20b9b00e9903b75f637ea73c967d">Flow</a>;
+<a name="l00120"></a>00120         
+<a name="l00121"></a><a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalFlow.html">00121</a>         <span class="keyword">class </span><a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalFlow.html">OpticalFlow</a> {
+<a name="l00122"></a>00122         <span class="keyword">public</span>:
+<a name="l00123"></a><a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalFlow.html#fee723cb59bef1aa07f23511ec183fa9">00123</a>             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalFlow.html#fee723cb59bef1aa07f23511ec183fa9">seedImage</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>*) { }
+<a name="l00124"></a>00124             
+<a name="l00125"></a><a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalFlow.html#0e3ade4e12b7e16def1e5e9287624776">00125</a>             <span class="keyword">virtual</span> <a class="code" href="namespaceOpenCV_1_1VectorizedGraphics.html#f6fd20b9b00e9903b75f637ea73c967d">Flow</a>* <a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalFlow.html#0e3ade4e12b7e16def1e5e9287624776">calcOpticalFlow</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>*) { <span class="keywordflow">return</span> NULL; } 
+<a name="l00126"></a>00126         };
+<a name="l00127"></a>00127         
+<a name="l00128"></a>00128     } <span class="comment">// namespace VectorizedGraphics</span>
+<a name="l00129"></a>00129 } <span class="comment">// namespace OpenCV</span>
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 <span class="preprocessor">#endif // OpticalFlow_h</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Mon May 4 16:11:20 2009 para CVTrackpad por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

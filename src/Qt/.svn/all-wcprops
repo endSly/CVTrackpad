@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svnroot/cvtrackpad/!svn/ver/32/src/Qt
+END
+ImageViewWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/28/src/Qt/ImageViewWidget.cpp
+END
+ImageViewWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/27/src/Qt/ImageViewWidget.h
+END
+TrayIcon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/cvtrackpad/!svn/ver/31/src/Qt/TrayIcon.cpp
+END
+TrayIcon.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/cvtrackpad/!svn/ver/25/src/Qt/TrayIcon.h
+END

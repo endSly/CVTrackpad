@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svnroot/cvtrackpad/!svn/ver/36/src
+END
+Gesture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/cvtrackpad/!svn/ver/33/src/Gesture.cpp
+END
+HandTrackerThread.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/36/src/HandTrackerThread.cpp
+END
+Hand.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/cvtrackpad/!svn/ver/36/src/Hand.h
+END
+CaptureThread.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/cvtrackpad/!svn/ver/31/src/CaptureThread.h
+END
+ScreenCapture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/30/src/ScreenCapture.cpp
+END
+Gesture.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/cvtrackpad/!svn/ver/33/src/Gesture.h
+END
+HandTrackerThread.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/cvtrackpad/!svn/ver/36/src/HandTrackerThread.h
+END
+Engine.pro
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/cvtrackpad/!svn/ver/1/src/Engine.pro
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/cvtrackpad/!svn/ver/18/src/main.cpp
+END
+ScreenRecognizer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/30/src/ScreenRecognizer.cpp
+END
+ScreenCapture.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/cvtrackpad/!svn/ver/30/src/ScreenCapture.h
+END
+Hand.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/cvtrackpad/!svn/ver/36/src/Hand.cpp
+END
+CaptureThread.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/31/src/CaptureThread.cpp
+END
+ScreenRecognizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/cvtrackpad/!svn/ver/30/src/ScreenRecognizer.h
+END

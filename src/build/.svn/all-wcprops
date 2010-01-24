@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/cvtrackpad/!svn/ver/35/src/build
+END
+OpticalObject.o
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/34/src/build/OpticalObject.o
+END
+Image.o
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/cvtrackpad/!svn/ver/34/src/build/Image.o
+END
+main.o
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/cvtrackpad/!svn/ver/34/src/build/main.o
+END
+moc_CameraDeviceDialog.o
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/cvtrackpad/!svn/ver/34/src/build/moc_CameraDeviceDialog.o
+END
+moc_TrayIcon.o
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/34/src/build/moc_TrayIcon.o
+END
+MouseEvent.o
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/cvtrackpad/!svn/ver/25/src/build/MouseEvent.o
+END
+CaptureThread.o
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/34/src/build/CaptureThread.o
+END
+StartScreen.o
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/cvtrackpad/!svn/ver/34/src/build/StartScreen.o
+END
+qrc_CVTrackPadResource.o
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/cvtrackpad/!svn/ver/34/src/build/qrc_CVTrackPadResource.o
+END
+Capture.o
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/cvtrackpad/!svn/ver/34/src/build/Capture.o
+END
+ScreenRecognizer.o
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/cvtrackpad/!svn/ver/34/src/build/ScreenRecognizer.o
+END
+Estimator.o
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/34/src/build/Estimator.o
+END
+Hand.o
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/cvtrackpad/!svn/ver/35/src/build/Hand.o
+END
+QueuedTracking.o
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/34/src/build/QueuedTracking.o
+END
+MainWindow.o
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/cvtrackpad/!svn/ver/34/src/build/MainWindow.o
+END
+Gesture.o
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/cvtrackpad/!svn/ver/34/src/build/Gesture.o
+END
+ImageViewWidget.o
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/cvtrackpad/!svn/ver/34/src/build/ImageViewWidget.o
+END
+ObjectTracker.o
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/34/src/build/ObjectTracker.o
+END
+DrawableImage.o
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/34/src/build/DrawableImage.o
+END
+TrayIcon.o
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/cvtrackpad/!svn/ver/34/src/build/TrayIcon.o
+END
+Mouse.o
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/cvtrackpad/!svn/ver/34/src/build/Mouse.o
+END
+Camera.o
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/cvtrackpad/!svn/ver/34/src/build/Camera.o
+END
+CameraDeviceDialog.o
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/cvtrackpad/!svn/ver/34/src/build/CameraDeviceDialog.o
+END
+VideoCapture.o
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/34/src/build/VideoCapture.o
+END
+moc_StartScreen.o
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/cvtrackpad/!svn/ver/34/src/build/moc_StartScreen.o
+END
+BackgroundSubtraction.o
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/cvtrackpad/!svn/ver/34/src/build/BackgroundSubtraction.o
+END
+Histogram.o
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/34/src/build/Histogram.o
+END
+CAMShift.o
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/cvtrackpad/!svn/ver/34/src/build/CAMShift.o
+END
+VideoWriter.o
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/cvtrackpad/!svn/ver/34/src/build/VideoWriter.o
+END
+ScreenCapture.o
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/34/src/build/ScreenCapture.o
+END
+ProcessableImage.o
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/cvtrackpad/!svn/ver/34/src/build/ProcessableImage.o
+END
+OFLKTracker.o
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/cvtrackpad/!svn/ver/34/src/build/OFLKTracker.o
+END
+MultipleTracker.o
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/cvtrackpad/!svn/ver/34/src/build/MultipleTracker.o
+END
+OpticalFlowLK.o
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/34/src/build/OpticalFlowLK.o
+END
+moc_MainWindow.o
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/34/src/build/moc_MainWindow.o
+END
+MeanShift.o
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/34/src/build/MeanShift.o
+END
+moc_ImageViewWidget.o
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/cvtrackpad/!svn/ver/34/src/build/moc_ImageViewWidget.o
+END
+HaarClassifier.o
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/34/src/build/HaarClassifier.o
+END

@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/cvtrackpad/!svn/ver/33/src/OpenCV
+END
+CAMShift.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/CAMShift.cpp
+END
+OpenCV.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/cvtrackpad/!svn/ver/1/src/OpenCV/OpenCV.hpp
+END
+VideoWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/33/src/OpenCV/VideoWriter.cpp
+END
+ProcessableImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/ProcessableImage.cpp
+END
+OFLKTracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/OFLKTracker.cpp
+END
+MultipleTracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/MultipleTracker.cpp
+END
+Capture.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/Capture.h
+END
+OpticalFlowLK.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/OpticalFlowLK.cpp
+END
+Estimator.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/Estimator.h
+END
+MeanShift.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/MeanShift.cpp
+END
+HaarClassifier.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/HaarClassifier.cpp
+END
+QueuedTracking.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/QueuedTracking.h
+END
+OpticalObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/cvtrackpad/!svn/ver/33/src/OpenCV/OpticalObject.cpp
+END
+Image.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/Image.cpp
+END
+ObjectTracker.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/ObjectTracker.h
+END
+OpticalFlow.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/31/src/OpenCV/OpticalFlow.h
+END
+DrawableImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/DrawableImage.h
+END
+Camera.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/Camera.h
+END
+VideoCapture.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/VideoCapture.h
+END
+Tracker.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/Tracker.h
+END
+BackgroundSubtraction.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/BackgroundSubtraction.h
+END
+Histogram.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/Histogram.h
+END
+CAMShift.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/CAMShift.h
+END
+Capture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/Capture.cpp
+END
+Estimator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/Estimator.cpp
+END
+VideoWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/33/src/OpenCV/VideoWriter.h
+END
+ProcessableImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/cvtrackpad/!svn/ver/18/src/OpenCV/ProcessableImage.h
+END
+QueuedTracking.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/QueuedTracking.cpp
+END
+OFLKTracker.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/OFLKTracker.h
+END
+MultipleTracker.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/MultipleTracker.h
+END
+OpticalFlowLK.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/OpticalFlowLK.h
+END
+ObjectTracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/ObjectTracker.cpp
+END
+MeanShift.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/cvtrackpad/!svn/ver/32/src/OpenCV/MeanShift.h
+END
+DrawableImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/DrawableImage.cpp
+END
+HaarClassifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/HaarClassifier.h
+END
+OpticalObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/OpticalObject.h
+END
+Image.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/Image.h
+END
+Camera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/Camera.cpp
+END
+VideoCapture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/VideoCapture.cpp
+END
+BackgroundSubtraction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/BackgroundSubtraction.cpp
+END
+Histogram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/27/src/OpenCV/Histogram.cpp
+END

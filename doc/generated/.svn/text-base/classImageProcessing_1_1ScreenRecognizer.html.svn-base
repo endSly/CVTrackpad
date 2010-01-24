@@ -1,0 +1,338 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CVTrackpad: Referencia de la Clase ImageProcessing::ScreenRecognizer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.9 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&nbsp;de&nbsp;la&nbsp;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceImageProcessing.html">ImageProcessing</a>::<a class="el" href="classImageProcessing_1_1ScreenRecognizer.html">ScreenRecognizer</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia de la Clase ImageProcessing::ScreenRecognizer</h1><!-- doxytag: class="ImageProcessing::ScreenRecognizer" --><code>#include &lt;<a class="el" href="ScreenRecognizer_8h_source.html">ScreenRecognizer.h</a>&gt;</code>
+<p>
+
+<p>
+<a href="classImageProcessing_1_1ScreenRecognizer-members.html">Lista de todos los miembros.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Métodos públicos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#80c6e1d869b135034df3795b9d8f2d6e">ScreenRecognizer</a> (<a class="el" href="classOpenCV_1_1VideoIO_1_1Capture.html">Capture</a> *)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#a623e2e57c5d1a235a1b3e2a22525717">~ScreenRecognizer</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#08dd3c81232ec8448e5da708fa95496f">recognize</a> ()</td></tr>
+
+<tr><td colspan="2"><br><h2>Atributos protegidos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classOpenCV_1_1VideoIO_1_1Capture.html">Capture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#4432ddcd0ed1d2c506e25880a7f305d9">m_camera</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">CvPoint2D32f *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#dbb97665062021017716d3b75783c383">m_corners</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Métodos privados</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">Image *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#cf604947cd10af395c174993eabd28c7">createChessboardImage</a> (CvSize, int, int)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">CvPoint2D32f *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#f95fc0afa77d6fc03db0a55db6f7d311">findCornerPoints</a> (const CvPoint2D32f *, int, int)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#5bd4a4ac196a0f905da807f4f4918481">correctProportionalCornersOfScreen</a> (CvPoint2D32f *, int, int)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#4672f918275a86316ac41414e7fa257e">newFrameForRecognize</a> (Image *)</td></tr>
+
+<tr><td colspan="2"><br><h2>Atributos privados</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#48063afdbcb92c45e4573e1dd76a0e64">m_didRecognize</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Amigas</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#40a076402e81c13911ee5e584e4ce6c9">ScreenCapture</a></td></tr>
+
+</table>
+<hr><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" name="80c6e1d869b135034df3795b9d8f2d6e"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::ScreenRecognizer" ref="80c6e1d869b135034df3795b9d8f2d6e" args="(Capture *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageProcessing::ScreenRecognizer::ScreenRecognizer           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenCV_1_1VideoIO_1_1Capture.html">Capture</a> *&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a623e2e57c5d1a235a1b3e2a22525717"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::~ScreenRecognizer" ref="a623e2e57c5d1a235a1b3e2a22525717" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageProcessing::ScreenRecognizer::~ScreenRecognizer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Hace referencia a <a class="el" href="ScreenRecognizer_8h_source.html#l00063">m_camera</a>, y <a class="el" href="ScreenRecognizer_8h_source.html#l00064">m_corners</a>.</p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de las funciones miembro</h2>
+<a class="anchor" name="5bd4a4ac196a0f905da807f4f4918481"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::correctProportionalCornersOfScreen" ref="5bd4a4ac196a0f905da807f4f4918481" args="(CvPoint2D32f *, int, int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImageProcessing::ScreenRecognizer::correctProportionalCornersOfScreen           </td>
+          <td>(</td>
+          <td class="paramtype">CvPoint2D32f *&nbsp;</td>
+          <td class="paramname"> <em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>columns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rows</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00146">newFrameForRecognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="cf604947cd10af395c174993eabd28c7"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::createChessboardImage" ref="cf604947cd10af395c174993eabd28c7" args="(CvSize, int, int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image * ImageProcessing::ScreenRecognizer::createChessboardImage           </td>
+          <td>(</td>
+          <td class="paramtype">CvSize&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>columns</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00062">recognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="f95fc0afa77d6fc03db0a55db6f7d311"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::findCornerPoints" ref="f95fc0afa77d6fc03db0a55db6f7d311" args="(const CvPoint2D32f *, int, int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CvPoint2D32f * ImageProcessing::ScreenRecognizer::findCornerPoints           </td>
+          <td>(</td>
+          <td class="paramtype">const CvPoint2D32f *&nbsp;</td>
+          <td class="paramname"> <em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>columns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rows</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00146">newFrameForRecognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="4672f918275a86316ac41414e7fa257e"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::newFrameForRecognize" ref="4672f918275a86316ac41414e7fa257e" args="(Image *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageProcessing::ScreenRecognizer::newFrameForRecognize           </td>
+          <td>(</td>
+          <td class="paramtype">Image *&nbsp;</td>
+          <td class="paramname"> <em>frame</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Hace referencia a <a class="el" href="ScreenRecognizer_8cpp_source.html#l00124">correctProportionalCornersOfScreen()</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00045">ImageProcessing::defaultColumns</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00044">ImageProcessing::defaultRows</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00096">findCornerPoints()</a>, <a class="el" href="ScreenRecognizer_8h_source.html#l00064">m_corners</a>, y <a class="el" href="ScreenRecognizer_8h_source.html#l00072">m_didRecognize</a>.</p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00062">recognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="08dd3c81232ec8448e5da708fa95496f"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::recognize" ref="08dd3c81232ec8448e5da708fa95496f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImageProcessing::ScreenRecognizer::recognize           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Hace referencia a <a class="el" href="ScreenRecognizer_8cpp_source.html#l00077">createChessboardImage()</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00045">ImageProcessing::defaultColumns</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00044">ImageProcessing::defaultRows</a>, <a class="el" href="ScreenRecognizer_8h_source.html#l00063">m_camera</a>, y <a class="el" href="ScreenRecognizer_8cpp_source.html#l00146">newFrameForRecognize()</a>.</p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de las funciones relacionadas y clases amigas</h2>
+<a class="anchor" name="40a076402e81c13911ee5e584e4ce6c9"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::ScreenCapture" ref="40a076402e81c13911ee5e584e4ce6c9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classImageProcessing_1_1ScreenCapture.html">ScreenCapture</a><code> [friend]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de los datos miembro</h2>
+<a class="anchor" name="4432ddcd0ed1d2c506e25880a7f305d9"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::m_camera" ref="4432ddcd0ed1d2c506e25880a7f305d9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenCV_1_1VideoIO_1_1Capture.html">Capture</a>* <a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#4432ddcd0ed1d2c506e25880a7f305d9">ImageProcessing::ScreenRecognizer::m_camera</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00062">recognize()</a>, y <a class="el" href="ScreenRecognizer_8cpp_source.html#l00055">~ScreenRecognizer()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="dbb97665062021017716d3b75783c383"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::m_corners" ref="dbb97665062021017716d3b75783c383" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CvPoint2D32f* <a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#dbb97665062021017716d3b75783c383">ImageProcessing::ScreenRecognizer::m_corners</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00146">newFrameForRecognize()</a>, y <a class="el" href="ScreenRecognizer_8cpp_source.html#l00055">~ScreenRecognizer()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="48063afdbcb92c45e4573e1dd76a0e64"></a><!-- doxytag: member="ImageProcessing::ScreenRecognizer::m_didRecognize" ref="48063afdbcb92c45e4573e1dd76a0e64" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classImageProcessing_1_1ScreenRecognizer.html#48063afdbcb92c45e4573e1dd76a0e64">ImageProcessing::ScreenRecognizer::m_didRecognize</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00146">newFrameForRecognize()</a>.</p>
+
+</div>
+</div><p>
+<hr>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="ScreenRecognizer_8h_source.html">ScreenRecognizer.h</a><li><a class="el" href="ScreenRecognizer_8cpp.html">ScreenRecognizer.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Sun May 10 17:14:22 2009 para CVTrackpad por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
+</body>
+</html>

@@ -1,0 +1,71 @@
+Prev
+*   Image, Histogram y demas basicas funcionando.
+*   ScreenRecognizer y ScreenCapture: Consigo que mostrando un tablero de ajedrez por pantalla reconozca los bordes de la misma y me lo ajuste.
+*   Retroproyeccion del color de un histograma funcionando(filtrado del color por tono).
+*   Algoritmo de Flujo Optico(Lucas-Kanade) funcionando, funciona realmente bien. genera vectores por cada punto sobre el que rastreas.
+*   Tracker
+    -   La clase Tracker(Abstracta) asegura que todos los trackers funcionen del mismo modo y permite intercambiarlos. 
+    -   Tracker por flujo optico funcionando. Utiliza la media y desviacion tipica para determinar los vectores de ruido y de fondo.
+    -   MeanShift implementado y funcionando.
+    -   CAMShift implementado, funciona peor que meanshift.
+*   Consiguo que me siga realmente bien la mano dandole un punto de partida y obtengo la superficie. solo con MeanShift. Grabo un video divbujando sobre 
+    el aire con la mano.
+
+18/02/09
+*   MultipleTracker: heredando de Tracker tomará varios Trackers(heredados de Tracker) y devolvera la media de todos. En el futuro habria que añadirle un 
+    estimator para validar o no el resultado de cada tracker.
+
+19/02/09
+*   He incluido OpenMP para la ejecucion en paralelo despues de no apreciar mejora creando hilos con pthread. Parece que si aumenta el rendimiento.
+*   OpticalObject: El buscador de objetos no logro que funcione, la conversion de mascara desconexa a mascara conexa ya funciona. Algo de las CvSeq.
+
+20/02/09
+*   OpticalObject: Implementado el buscador de objetos de OpticalObject. Este descompone una imagen(mascara mejor), en una matriz de objetos describiendolo 
+    como un poligono irregular(de cientos de lados, pero poligono). Es una algoritmo bastante pesado; no es viable para la ejecucion en cada frame. 
+    Por lo que mi idea de Bayes mean shift no es posible utilizando el objeto para obtener un nuevo histograma en cada frame.
+    La idea de realimentacion del histograma me sige pareciendo buena
+    
+21/02/09
+*   El proceso de seguimiento de la mano se dividira en 2 partes según el tipo de algoritmo que empleen para obtener la posicion de la mano.
+    -   Relativos: Seran los tracker, con los distintos tipos de algoritmos implementados que se ejecutaran en paralelo. Buscaran la mano partiendo 
+        de la información del frame anterior, por lo tanto dependen de un punto de partida.
+        Por ahora mean-shift y Lukas-Kanade son los que mejor parecen responder ademas de ser los más ligeros.
+    -   Absolutos: Las cascadas de Haar funcionan bien pero son demasiado lentas y dependen del angulo del objeto. Ademas no he encontrado ninguna cascada
+        para manos abiertas(si para cerradas, pero bastante malo). Por ahora mi idea es buscar la cara por cascadas de haar en un hilo de
+        ejecucion con poca prioridad e ir aprendiendo el color de la piel buscando la mano como un objeto del mismo color que la cara(Back-project del 
+        histograma) y buscando objetos conexos con el mismo color y un area  dependiente del area de la cara(Ej: 1/2 del area aprox).
+    Evidentemente los algoritmos absolutos son mucho más lentos que los relativos. La idea es ejecutarlos en dos hilos independientes dando más prioridad a los 
+    relativos.
+*   Los objetos encontrados a partir de la retroproyeccion del histograma del color de la piel coje bastante ruido, es posible uque sea por el entorno.
+  
+22/02/09
+*   He conseguido ejecutar dos algoritmos, absoluto y relativo en dos hilos de ejectución. Se aprecia que el absoluto es mucho mas lento pero apenas se nota
+    ralentización(en torno al 20%-30%) el los trackers(relativo). Ambos funcionan a framerates independientes sin interferir.
+    A dia de hoy el seguimineto de la cara(trackers + absolutos) es realmente solido, funcionando fluidamente. Al utilizar cascadas de haar no pierde la cara
+    tras un tiempo siguiendola.
+    Es relativamente inestable ya que no lo habia pensado originalmente para multihilo y ambos procesos acceden a la vez a imagenes.
+*   Implementado rect y area de OpticalObject.
+
+23/02/09
+*   En los optical objects diferencio la cara del resto de las mano, aunque coje algo de ruido. Compara los rects con el rect original de la cara.
+
+25/02/09
+*   Sustituido el BayesMShift por ObjectTracker. La realimentacion del histograma sera opcional. probablemente todos los tracker basadosn en color 
+    comparatan histograma. ObjectTracker hereda(protected) de MeanShift pero no emplea este algoritmo pero la similitud de los algoritmos los hace compatibles.
+    Tratara de estimar la posicion del objeto a partir de la retroproyeccion del histograma y busqueda de objetos conexos. el decrecimiento del area y la
+    distancia a la nueva posición servirá para estimar su valided
+    
+14/03/09
+*	La clase Hand, que hereda de Optical object(protected) permite buscar la mano y obtener información hacerca de ella, la superficie, color(Histogram).
+	Esta clase permite reconocerla a partir de un Histograma, usando un guante de un determinado color o a partir de la cascada de Haar de la Cara y buscando 
+	en la imagen un objeto del mismo color que no sea la cara; Este último sistema funciona bastante peor ya que con un fondo de un color similar o con  una 
+	iluminación incorrecta falla. 
+	Estos algoritmos son de busqueda absoluta.
+	
+20/03/09
+*	La concurrencia de procesos funciona ahora correctamente usnado la clase QThread de Qt en lugar de los pthreads.
+
+29/03/09
+*	Probablemente el reconocedor de Gestos se implemente con los momentos de un objeto optico, ya que por ejemplo, el momento del objeto de una mano abierta 
+	es paralela a esta pero el de la mano cerrada es perpendicular.
+    

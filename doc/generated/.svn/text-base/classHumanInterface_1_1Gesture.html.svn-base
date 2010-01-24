@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CVTrackpad: Referencia de la Clase HumanInterface::Gesture</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.9 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&nbsp;de&nbsp;la&nbsp;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceHumanInterface.html">HumanInterface</a>::<a class="el" href="classHumanInterface_1_1Gesture.html">Gesture</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia de la Clase HumanInterface::Gesture</h1><!-- doxytag: class="HumanInterface::Gesture" --><a class="el" href="classHumanInterface_1_1Gesture.html" title="Gesture Creates thread to observe OpticalObject&#39;s evolution and interpret gestures...">Gesture</a> Creates thread to observe OpticalObject's evolution and interpret gestures.  
+<a href="#_details">Más...</a>
+<p>
+<code>#include &lt;<a class="el" href="Gesture_8h_source.html">Gesture.h</a>&gt;</code>
+<p>
+
+<p>
+<a href="classHumanInterface_1_1Gesture-members.html">Lista de todos los miembros.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Métodos públicos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHumanInterface_1_1Gesture.html#365926a340995731f3e8fb0ae4fdfa56">Gesture</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHumanInterface_1_1Gesture.html#6ae5239f4c18752aaf4671ecd175dadd">Gesture</a> (const <a class="el" href="classHumanInterface_1_1Gesture.html">Gesture</a> &amp;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHumanInterface_1_1Gesture.html#695f583c963a2da06e22ce96adc62676">Gesture</a> (const <a class="el" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a> *&amp;, <a class="el" href="namespaceHumanInterface.html#9e07404bb53ac53a9b5a60c45925c453">GestureEventHandler</a>)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Default Constructor.  <a href="#695f583c963a2da06e22ce96adc62676"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHumanInterface_1_1Gesture.html#24557f0c2144d5f2a4b054c36d9b804f">setObserver</a> (const <a class="el" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a> *&amp;)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a> *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHumanInterface_1_1Gesture.html#cce840fdc40d8630bc9ba7f649f92436">observer</a> ()</td></tr>
+
+<tr><td colspan="2"><br><h2>Métodos protegidos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHumanInterface_1_1Gesture.html#29d470f10c206fb48ab73c7f8cab4a06">run</a> ()</td></tr>
+
+<tr><td colspan="2"><br><h2>Atributos protegidos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespaceHumanInterface.html#9e07404bb53ac53a9b5a60c45925c453">GestureEventHandler</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHumanInterface_1_1Gesture.html#97544bed501d476b2030b303493e185a">m_eventHandler</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHumanInterface_1_1Gesture.html#d6ede6010c8284dd8df7acf5286eb207">m_objectToObserve</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Descripción detallada</h2>
+<a class="el" href="classHumanInterface_1_1Gesture.html" title="Gesture Creates thread to observe OpticalObject&#39;s evolution and interpret gestures...">Gesture</a> Creates thread to observe OpticalObject's evolution and interpret gestures. 
+<p>
+<dl class="todo" compact><dt><b><a class="el" href="todo.html#_todo000001">Tareas Pendientes:</a></b></dt><dd></dd></dl>
+<hr><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" name="365926a340995731f3e8fb0ae4fdfa56"></a><!-- doxytag: member="HumanInterface::Gesture::Gesture" ref="365926a340995731f3e8fb0ae4fdfa56" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HumanInterface::Gesture::Gesture           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="6ae5239f4c18752aaf4671ecd175dadd"></a><!-- doxytag: member="HumanInterface::Gesture::Gesture" ref="6ae5239f4c18752aaf4671ecd175dadd" args="(const Gesture &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HumanInterface::Gesture::Gesture           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classHumanInterface_1_1Gesture.html">Gesture</a> &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="695f583c963a2da06e22ce96adc62676"></a><!-- doxytag: member="HumanInterface::Gesture::Gesture" ref="695f583c963a2da06e22ce96adc62676" args="(const OpticalObject *&amp;, GestureEventHandler)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HumanInterface::Gesture::Gesture           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a> *&amp;&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceHumanInterface.html#9e07404bb53ac53a9b5a60c45925c453">GestureEventHandler</a>&nbsp;</td>
+          <td class="paramname"></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Default Constructor. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>\param</em>&nbsp;</td><td>[in] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>Documentación de las funciones miembro</h2>
+<a class="anchor" name="cce840fdc40d8630bc9ba7f649f92436"></a><!-- doxytag: member="HumanInterface::Gesture::observer" ref="cce840fdc40d8630bc9ba7f649f92436" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>*&amp; HumanInterface::Gesture::observer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="29d470f10c206fb48ab73c7f8cab4a06"></a><!-- doxytag: member="HumanInterface::Gesture::run" ref="29d470f10c206fb48ab73c7f8cab4a06" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HumanInterface::Gesture::run           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="24557f0c2144d5f2a4b054c36d9b804f"></a><!-- doxytag: member="HumanInterface::Gesture::setObserver" ref="24557f0c2144d5f2a4b054c36d9b804f" args="(const OpticalObject *&amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HumanInterface::Gesture::setObserver           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a> *&amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de los datos miembro</h2>
+<a class="anchor" name="97544bed501d476b2030b303493e185a"></a><!-- doxytag: member="HumanInterface::Gesture::m_eventHandler" ref="97544bed501d476b2030b303493e185a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceHumanInterface.html#9e07404bb53ac53a9b5a60c45925c453">GestureEventHandler</a>* <a class="el" href="classHumanInterface_1_1Gesture.html#97544bed501d476b2030b303493e185a">HumanInterface::Gesture::m_eventHandler</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="d6ede6010c8284dd8df7acf5286eb207"></a><!-- doxytag: member="HumanInterface::Gesture::m_objectToObserve" ref="d6ede6010c8284dd8df7acf5286eb207" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>* <a class="el" href="classHumanInterface_1_1Gesture.html#d6ede6010c8284dd8df7acf5286eb207">HumanInterface::Gesture::m_objectToObserve</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li><a class="el" href="Gesture_8h_source.html">Gesture.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Tue May 12 10:46:45 2009 para CVTrackpad por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
+</body>
+</html>

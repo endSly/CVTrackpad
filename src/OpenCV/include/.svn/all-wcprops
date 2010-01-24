@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/cvtrackpad/!svn/ver/28/src/OpenCV/include
+END
+OpenCV.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/cvtrackpad/!svn/ver/28/src/OpenCV/include/OpenCV.h
+END
+ExternalBundle.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/cvtrackpad/!svn/ver/7/src/OpenCV/include/ExternalBundle.h
+END
+Exception.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/cvtrackpad/!svn/ver/13/src/OpenCV/include/Exception.h
+END
+Macros.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/cvtrackpad/!svn/ver/18/src/OpenCV/include/Macros.h
+END

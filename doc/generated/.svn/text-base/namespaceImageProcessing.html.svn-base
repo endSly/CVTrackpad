@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CVTrackpad: Referencia del Namespace ImageProcessing</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.9 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="namespaces.html"><span>Lista&nbsp;de&nbsp;namespace</span></a></li>
+      <li><a href="namespacemembers.html"><span>Miembros&nbsp;del&nbsp;Namespace&nbsp;</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia del Namespace ImageProcessing</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Clases</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenCapture.html">ScreenCapture</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageProcessing_1_1ScreenRecognizer.html">ScreenRecognizer</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">const int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceImageProcessing.html#e665ba826d828214f31f7a4882786461">defaultRows</a> = 5</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">const int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceImageProcessing.html#eb8a105be3297500906c18f1abfdd9e2">defaultColumns</a> = 8</td></tr>
+
+</table>
+<hr><h2>Documentación de las variables</h2>
+<a class="anchor" name="eb8a105be3297500906c18f1abfdd9e2"></a><!-- doxytag: member="ImageProcessing::defaultColumns" ref="eb8a105be3297500906c18f1abfdd9e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="namespaceImageProcessing.html#eb8a105be3297500906c18f1abfdd9e2">ImageProcessing::defaultColumns</a> = 8          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00146">ImageProcessing::ScreenRecognizer::newFrameForRecognize()</a>, y <a class="el" href="ScreenRecognizer_8cpp_source.html#l00062">ImageProcessing::ScreenRecognizer::recognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e665ba826d828214f31f7a4882786461"></a><!-- doxytag: member="ImageProcessing::defaultRows" ref="e665ba826d828214f31f7a4882786461" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="namespaceImageProcessing.html#e665ba826d828214f31f7a4882786461">ImageProcessing::defaultRows</a> = 5          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00146">ImageProcessing::ScreenRecognizer::newFrameForRecognize()</a>, y <a class="el" href="ScreenRecognizer_8cpp_source.html#l00062">ImageProcessing::ScreenRecognizer::recognize()</a>.</p>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Sun May 10 17:14:22 2009 para CVTrackpad por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CVTrackpad: Lista de los miembros</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.9 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&nbsp;de&nbsp;la&nbsp;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>HummanInterface::ScreenRecognizer Lista de los miembros</h1>Esta es la lista completa de miembros para <a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a>, incluyendo todos los miembros heredados.<p><table>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#3f5081b5a5bb31316f3917dfff80cdd1">correctProportionalCornersOfScreen</a>(CvPoint2D32f *, int, int)</td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td><code> [private]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#7b24c8578f1d9868d9701ea62bfcc43a">createChessboardImage</a>(CvSize, int, int)</td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td><code> [private]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#d589a5f22d499ffe3d8120a96fd0a27a">findCornerPoints</a>(const CvPoint2D32f *, int, int)</td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td><code> [private]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#922ead6fa4985392798339e0ba6af858">m_camera</a></td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#8bb9656fda72f6f1837b6edf0d951f82">m_corners</a></td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#7e44446f076c7afad2dc40b99634df00">m_didRecognize</a></td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td><code> [private]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#eba81d07f825d62fe81b54bad7ebb14d">newFrameForRecognize</a>(Image *)</td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td><code> [private]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#52ca3d068ae9d5f20a54261acc2131e8">recognize</a>()</td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#40a076402e81c13911ee5e584e4ce6c9">ScreenCapture</a> class</td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td><code> [friend]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#45d6fb3c560214b174aa076366218be2">ScreenRecognizer</a>(Capture *)</td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#aab3c278baf8c4d802d69ee05a5cfa88">~ScreenRecognizer</a>()</td><td><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">HummanInterface::ScreenRecognizer</a></td><td></td></tr>
+</table></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Sat May 16 12:28:32 2009 para CVTrackpad por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
+</body>
+</html>

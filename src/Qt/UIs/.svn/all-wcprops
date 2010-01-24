@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/cvtrackpad/!svn/ver/32/src/Qt/UIs
+END
+StartScreen.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/cvtrackpad/!svn/ver/29/src/Qt/UIs/StartScreen.h
+END
+CameraDeviceDialog.ui
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/cvtrackpad/!svn/ver/25/src/Qt/UIs/CameraDeviceDialog.ui
+END
+CameraDeviceDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/cvtrackpad/!svn/ver/27/src/Qt/UIs/CameraDeviceDialog.cpp
+END
+StartScreen.ui
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/cvtrackpad/!svn/ver/32/src/Qt/UIs/StartScreen.ui
+END
+CameraDeviceDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/cvtrackpad/!svn/ver/25/src/Qt/UIs/CameraDeviceDialog.h
+END
+StartScreen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cvtrackpad/!svn/ver/31/src/Qt/UIs/StartScreen.cpp
+END

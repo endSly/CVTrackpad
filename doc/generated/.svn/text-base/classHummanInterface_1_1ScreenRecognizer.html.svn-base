@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CVTrackpad: Referencia de la Clase HummanInterface::ScreenRecognizer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.9 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&nbsp;de&nbsp;la&nbsp;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceHummanInterface.html">HummanInterface</a>::<a class="el" href="classHummanInterface_1_1ScreenRecognizer.html">ScreenRecognizer</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia de la Clase HummanInterface::ScreenRecognizer</h1><!-- doxytag: class="HummanInterface::ScreenRecognizer" --><code>#include &lt;<a class="el" href="ScreenRecognizer_8h_source.html">ScreenRecognizer.h</a>&gt;</code>
+<p>
+
+<p>
+<a href="classHummanInterface_1_1ScreenRecognizer-members.html">Lista de todos los miembros.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Métodos públicos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#45d6fb3c560214b174aa076366218be2">ScreenRecognizer</a> (<a class="el" href="classOpenCV_1_1VideoIO_1_1Capture.html">Capture</a> *)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#aab3c278baf8c4d802d69ee05a5cfa88">~ScreenRecognizer</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#52ca3d068ae9d5f20a54261acc2131e8">recognize</a> ()</td></tr>
+
+<tr><td colspan="2"><br><h2>Atributos protegidos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classOpenCV_1_1VideoIO_1_1Capture.html">Capture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#922ead6fa4985392798339e0ba6af858">m_camera</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">CvPoint2D32f *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#8bb9656fda72f6f1837b6edf0d951f82">m_corners</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Métodos privados</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">Image *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#7b24c8578f1d9868d9701ea62bfcc43a">createChessboardImage</a> (CvSize, int, int)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">CvPoint2D32f *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#d589a5f22d499ffe3d8120a96fd0a27a">findCornerPoints</a> (const CvPoint2D32f *, int, int)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#3f5081b5a5bb31316f3917dfff80cdd1">correctProportionalCornersOfScreen</a> (CvPoint2D32f *, int, int)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#eba81d07f825d62fe81b54bad7ebb14d">newFrameForRecognize</a> (Image *)</td></tr>
+
+<tr><td colspan="2"><br><h2>Atributos privados</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#7e44446f076c7afad2dc40b99634df00">m_didRecognize</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Amigas</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#40a076402e81c13911ee5e584e4ce6c9">ScreenCapture</a></td></tr>
+
+</table>
+<hr><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" name="45d6fb3c560214b174aa076366218be2"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::ScreenRecognizer" ref="45d6fb3c560214b174aa076366218be2" args="(Capture *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HummanInterface::ScreenRecognizer::ScreenRecognizer           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenCV_1_1VideoIO_1_1Capture.html">Capture</a> *&nbsp;</td>
+          <td class="paramname"> <em>cam</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="aab3c278baf8c4d802d69ee05a5cfa88"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::~ScreenRecognizer" ref="aab3c278baf8c4d802d69ee05a5cfa88" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HummanInterface::ScreenRecognizer::~ScreenRecognizer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Hace referencia a <a class="el" href="ScreenRecognizer_8h_source.html#l00060">m_camera</a>, y <a class="el" href="ScreenRecognizer_8h_source.html#l00061">m_corners</a>.</p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de las funciones miembro</h2>
+<a class="anchor" name="3f5081b5a5bb31316f3917dfff80cdd1"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::correctProportionalCornersOfScreen" ref="3f5081b5a5bb31316f3917dfff80cdd1" args="(CvPoint2D32f *, int, int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HummanInterface::ScreenRecognizer::correctProportionalCornersOfScreen           </td>
+          <td>(</td>
+          <td class="paramtype">CvPoint2D32f *&nbsp;</td>
+          <td class="paramname"> <em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>columns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rows</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00137">newFrameForRecognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="7b24c8578f1d9868d9701ea62bfcc43a"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::createChessboardImage" ref="7b24c8578f1d9868d9701ea62bfcc43a" args="(CvSize, int, int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image * HummanInterface::ScreenRecognizer::createChessboardImage           </td>
+          <td>(</td>
+          <td class="paramtype">CvSize&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>columns</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Hace referencia a <a class="el" href="DrawableImage_8cpp_source.html#l00068">OpenCV::Bitmap::DrawableImage::drawBox()</a>.</p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00053">recognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="d589a5f22d499ffe3d8120a96fd0a27a"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::findCornerPoints" ref="d589a5f22d499ffe3d8120a96fd0a27a" args="(const CvPoint2D32f *, int, int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CvPoint2D32f * HummanInterface::ScreenRecognizer::findCornerPoints           </td>
+          <td>(</td>
+          <td class="paramtype">const CvPoint2D32f *&nbsp;</td>
+          <td class="paramname"> <em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>columns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rows</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00137">newFrameForRecognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="eba81d07f825d62fe81b54bad7ebb14d"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::newFrameForRecognize" ref="eba81d07f825d62fe81b54bad7ebb14d" args="(Image *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HummanInterface::ScreenRecognizer::newFrameForRecognize           </td>
+          <td>(</td>
+          <td class="paramtype">Image *&nbsp;</td>
+          <td class="paramname"> <em>frame</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Hace referencia a <a class="el" href="ScreenRecognizer_8cpp_source.html#l00115">correctProportionalCornersOfScreen()</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00036">HummanInterface::defaultColumns</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00035">HummanInterface::defaultRows</a>, <a class="el" href="DrawableImage_8cpp_source.html#l00058">OpenCV::Bitmap::DrawableImage::drawLine()</a>, <a class="el" href="ProcessableImage_8cpp_source.html#l00104">OpenCV::Bitmap::ProcessableImage::findChessboardCorners()</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00087">findCornerPoints()</a>, <a class="el" href="ScreenRecognizer_8h_source.html#l00061">m_corners</a>, <a class="el" href="ScreenRecognizer_8h_source.html#l00069">m_didRecognize</a>, <a class="el" href="Image_8cpp_source.html#l00215">OpenCV::Bitmap::Image::showImage()</a>, <a class="el" href="Image_8h_source.html#l00116">OpenCV::Bitmap::Image::size()</a>, y <a class="el" href="ProcessableImage_8cpp_source.html#l00074">OpenCV::Bitmap::ProcessableImage::warpPerspective()</a>.</p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00053">recognize()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="52ca3d068ae9d5f20a54261acc2131e8"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::recognize" ref="52ca3d068ae9d5f20a54261acc2131e8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HummanInterface::ScreenRecognizer::recognize           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Hace referencia a <a class="el" href="Capture_8cpp_source.html#l00054">OpenCV::VideoIO::Capture::captureFrame()</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00068">createChessboardImage()</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00036">HummanInterface::defaultColumns</a>, <a class="el" href="ScreenRecognizer_8cpp_source.html#l00035">HummanInterface::defaultRows</a>, <a class="el" href="ScreenRecognizer_8h_source.html#l00060">m_camera</a>, y <a class="el" href="ScreenRecognizer_8cpp_source.html#l00137">newFrameForRecognize()</a>.</p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de las funciones relacionadas y clases amigas</h2>
+<a class="anchor" name="40a076402e81c13911ee5e584e4ce6c9"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::ScreenCapture" ref="40a076402e81c13911ee5e584e4ce6c9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classHummanInterface_1_1ScreenCapture.html">ScreenCapture</a><code> [friend]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de los datos miembro</h2>
+<a class="anchor" name="922ead6fa4985392798339e0ba6af858"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::m_camera" ref="922ead6fa4985392798339e0ba6af858" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenCV_1_1VideoIO_1_1Capture.html">Capture</a>* <a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#922ead6fa4985392798339e0ba6af858">HummanInterface::ScreenRecognizer::m_camera</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00053">recognize()</a>, y <a class="el" href="ScreenRecognizer_8cpp_source.html#l00046">~ScreenRecognizer()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="8bb9656fda72f6f1837b6edf0d951f82"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::m_corners" ref="8bb9656fda72f6f1837b6edf0d951f82" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CvPoint2D32f* <a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#8bb9656fda72f6f1837b6edf0d951f82">HummanInterface::ScreenRecognizer::m_corners</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00137">newFrameForRecognize()</a>, y <a class="el" href="ScreenRecognizer_8cpp_source.html#l00046">~ScreenRecognizer()</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="7e44446f076c7afad2dc40b99634df00"></a><!-- doxytag: member="HummanInterface::ScreenRecognizer::m_didRecognize" ref="7e44446f076c7afad2dc40b99634df00" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classHummanInterface_1_1ScreenRecognizer.html#7e44446f076c7afad2dc40b99634df00">HummanInterface::ScreenRecognizer::m_didRecognize</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Referenciado por <a class="el" href="ScreenRecognizer_8cpp_source.html#l00137">newFrameForRecognize()</a>.</p>
+
+</div>
+</div><p>
+<hr>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="ScreenRecognizer_8h_source.html">ScreenRecognizer.h</a><li><a class="el" href="ScreenRecognizer_8cpp.html">ScreenRecognizer.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Sat May 16 12:28:32 2009 para CVTrackpad por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
+</body>
+</html>

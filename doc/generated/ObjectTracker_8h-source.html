@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CVTrackpad: Fichero Fuente ObjectTracker.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>ObjectTracker.h</h1><a href="ObjectTracker_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*-</span>
+<a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2009 Ander Suarez and Endika Gutiérrez</span>
+<a name="l00003"></a>00003 <span class="comment"> * All rights reserved.</span>
+<a name="l00004"></a>00004 <span class="comment"> *</span>
+<a name="l00005"></a>00005 <span class="comment"> * Redistribution and use in source and binary forms, with or without</span>
+<a name="l00006"></a>00006 <span class="comment"> * modification, are permitted provided that the following conditions</span>
+<a name="l00007"></a>00007 <span class="comment"> * are met:</span>
+<a name="l00008"></a>00008 <span class="comment"> * 1. Redistributions of source code must retain the above copyright</span>
+<a name="l00009"></a>00009 <span class="comment"> *    notice, this list of conditions and the following disclaimer.</span>
+<a name="l00010"></a>00010 <span class="comment"> * 2. Redistributions in binary form must reproduce the above copyright</span>
+<a name="l00011"></a>00011 <span class="comment"> *    notice, this list of conditions and the following disclaimer in the</span>
+<a name="l00012"></a>00012 <span class="comment"> *    documentation and/or other materials provided with the distribution.</span>
+<a name="l00013"></a>00013 <span class="comment"> * 3. Neither the name of copyright holders nor the names of its</span>
+<a name="l00014"></a>00014 <span class="comment"> *    contributors may be used to endorse or promote products derived</span>
+<a name="l00015"></a>00015 <span class="comment"> *    from this software without specific prior written permission.</span>
+<a name="l00016"></a>00016 <span class="comment"> *</span>
+<a name="l00017"></a>00017 <span class="comment"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<a name="l00018"></a>00018 <span class="comment"> * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED</span>
+<a name="l00019"></a>00019 <span class="comment"> * TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR</span>
+<a name="l00020"></a>00020 <span class="comment"> * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL COPYRIGHT HOLDERS OR CONTRIBUTORS</span>
+<a name="l00021"></a>00021 <span class="comment"> * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span>
+<a name="l00022"></a>00022 <span class="comment"> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span>
+<a name="l00023"></a>00023 <span class="comment"> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span>
+<a name="l00024"></a>00024 <span class="comment"> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span>
+<a name="l00025"></a>00025 <span class="comment"> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span>
+<a name="l00026"></a>00026 <span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<a name="l00027"></a>00027 <span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span>
+<a name="l00028"></a>00028 <span class="comment"> */</span>
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="comment">/*</span>
+<a name="l00032"></a>00032 <span class="comment"> *  ObjectTracker.h</span>
+<a name="l00033"></a>00033 <span class="comment"> *  CVTrackpad</span>
+<a name="l00034"></a>00034 <span class="comment"> *</span>
+<a name="l00035"></a>00035 <span class="comment"> *  Created by Endika Gutiérrez Salas on 25/02/09.</span>
+<a name="l00036"></a>00036 <span class="comment"> *  Copyright 2009 Univerity of Deusto. All rights reserved.</span>
+<a name="l00037"></a>00037 <span class="comment"> *</span>
+<a name="l00038"></a>00038 <span class="comment"> */</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="preprocessor">#ifndef ObjectTracker_h</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span><span class="preprocessor">#define ObjectTracker_h</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span>
+<a name="l00043"></a>00043 <span class="preprocessor">#include "<a class="code" href="Macros_8h.html">include/Macros.h</a>"</span>
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="preprocessor">#include "<a class="code" href="OpenCV_8h.html">include/OpenCV.h</a>"</span>
+<a name="l00046"></a>00046 <span class="comment">//#include "Image.h"</span>
+<a name="l00047"></a>00047 <span class="comment">//#include "Histogram.h"</span>
+<a name="l00048"></a>00048 <span class="preprocessor">#include "<a class="code" href="OpticalObject_8h.html">OpticalObject.h</a>"</span>
+<a name="l00049"></a>00049 <span class="preprocessor">#include "<a class="code" href="MeanShift_8h.html">MeanShift.h</a>"</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="keyword">using namespace </span>OpenCV;
+<a name="l00052"></a>00052 <span class="keyword">using namespace </span>VectorizedGraphics;
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="keyword">namespace </span>OpenCV {
+<a name="l00055"></a>00055     <span class="keyword">namespace </span>Tracking {
+<a name="l00056"></a><a class="code" href="namespaceOpenCV_1_1Tracking.html#e694130c24a377bf70a43c37e5aafd56">00056</a>         <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="namespaceOpenCV_1_1Tracking.html#e694130c24a377bf70a43c37e5aafd56">MIN_PERIMETER_TO_TRACK</a> = 32.0;
+<a name="l00057"></a><a class="code" href="namespaceOpenCV_1_1Tracking.html#2f628b716979b16c19644872b72f9258">00057</a>         <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="namespaceOpenCV_1_1Tracking.html#2f628b716979b16c19644872b72f9258">MIN_PROBABILITY</a> = 0.25;
+<a name="l00058"></a>00058         
+<a name="l00059"></a><a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html">00059</a>         <span class="keyword">class </span><a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html">ObjectTracker</a> : <span class="keyword">public</span> <a class="code" href="classOpenCV_1_1Tracking_1_1MeanShift.html">MeanShift</a> {
+<a name="l00060"></a>00060         <span class="keyword">public</span>:
+<a name="l00061"></a>00061 <span class="comment">// Constructors</span>
+<a name="l00062"></a>00062             <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#b92c7636c93365d0b17f51be03c61191">ObjectTracker</a>();
+<a name="l00063"></a>00063             <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#b92c7636c93365d0b17f51be03c61191">ObjectTracker</a>(<span class="keyword">const</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html">ObjectTracker</a>&amp;);
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065             <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#b92c7636c93365d0b17f51be03c61191">ObjectTracker</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>*, CvRect);
+<a name="l00066"></a>00066             <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#b92c7636c93365d0b17f51be03c61191">ObjectTracker</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>*, CvConnectedComp*);
+<a name="l00067"></a>00067             <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#b92c7636c93365d0b17f51be03c61191">ObjectTracker</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>*, <a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>*);
+<a name="l00068"></a>00068             <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#b92c7636c93365d0b17f51be03c61191">ObjectTracker</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Histogram.html">Histogram</a>*, CvRect);
+<a name="l00069"></a>00069             <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#b92c7636c93365d0b17f51be03c61191">ObjectTracker</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Histogram.html">Histogram</a>*, <a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>*);
+<a name="l00070"></a>00070             
+<a name="l00071"></a>00071             <span class="keyword">virtual</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#9195e54e48c6fbe5f2d50db710d273a3">~ObjectTracker</a>();
+<a name="l00072"></a>00072             
+<a name="l00073"></a>00073 <span class="comment">// Getters and Setters</span>
+<a name="l00074"></a><a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#f722ea801690d028a8897d973a0a960e">00074</a>             <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#f722ea801690d028a8897d973a0a960e">setLastPosition</a>(CvRect rect) { <a class="code" href="classOpenCV_1_1Tracking_1_1MeanShift.html#43a2d9436142063be26d8a5468fc229c">m_lastPostition</a> = rect; }
+<a name="l00075"></a>00075             <span class="keywordtype">void</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#3989994030e8cf591c488a40c81e8080">setTrackingHistogram</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Histogram.html">Histogram</a>*);
+<a name="l00076"></a>00076             <span class="keywordtype">void</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#7cd580c06b3d0712d2ddf15330be0d66">setOpticalObject</a>(<a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>*);
+<a name="l00077"></a><a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#33daad7b770629ed359738c068309d1a">00077</a>             <span class="keyword">inline</span> CvRect <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#33daad7b770629ed359738c068309d1a">lastPosition</a>() { <span class="keywordflow">return</span> <a class="code" href="classOpenCV_1_1Tracking_1_1MeanShift.html#43a2d9436142063be26d8a5468fc229c">m_lastPostition</a>; }
+<a name="l00078"></a><a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#18ca2f2545d0ead21b6b764182122148">00078</a>             <span class="keyword">inline</span> <a class="code" href="classOpenCV_1_1Bitmap_1_1Histogram.html">Histogram</a>* <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#18ca2f2545d0ead21b6b764182122148">trackingHistogram</a>() { <span class="keywordflow">return</span> <a class="code" href="classOpenCV_1_1Tracking_1_1MeanShift.html#c2aeb0f57864e6ad554049280f93c212">m_trackingHist</a>; }
+<a name="l00079"></a><a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#851ec79e574388146d57820775f332b0">00079</a>             <span class="keyword">inline</span> <a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>* <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#851ec79e574388146d57820775f332b0">trackingObject</a>() { <span class="keywordflow">return</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#26ea9d027611aea0d55f0a32db032ee4">m_trackingObject</a>; }
+<a name="l00080"></a>00080             
+<a name="l00081"></a>00081 <span class="comment">// Public Methods</span>
+<a name="l00082"></a>00082             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#726fa383ea054ecb4f7b835c1986993b">startTracking</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>*, CvConnectedComp*);
+<a name="l00083"></a>00083             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#726fa383ea054ecb4f7b835c1986993b">startTracking</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>*, <a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>*);
+<a name="l00084"></a>00084             
+<a name="l00085"></a>00085             <a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>* <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#8115e0f0d60c4227567fa5dff0c6da0a">trackObject</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>*);
+<a name="l00086"></a><a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#fd319c5b6678934d41d1491b7a96bf51">00086</a>             <span class="keyword">virtual</span> <span class="keyword">inline</span> CvConnectedComp* <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#fd319c5b6678934d41d1491b7a96bf51">track</a>(<a class="code" href="classOpenCV_1_1Bitmap_1_1Image.html">Image</a>* image) { <span class="keywordflow">return</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#8115e0f0d60c4227567fa5dff0c6da0a">trackObject</a>(image)-&gt;<a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html#12a86df7349874cb9363117d41dd3a0f">connectedComponents</a>(); }
+<a name="l00087"></a>00087             
+<a name="l00088"></a>00088         <span class="keyword">protected</span>:
+<a name="l00089"></a><a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#26ea9d027611aea0d55f0a32db032ee4">00089</a>             <a class="code" href="classOpenCV_1_1VectorizedGraphics_1_1OpticalObject.html">OpticalObject</a>* <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#26ea9d027611aea0d55f0a32db032ee4">m_trackingObject</a>;
+<a name="l00090"></a>00090             
+<a name="l00091"></a>00091         <span class="keyword">private</span>:
+<a name="l00092"></a>00092 <span class="comment">// Private Methods</span>
+<a name="l00093"></a>00093             <span class="keywordtype">double</span> <a class="code" href="classOpenCV_1_1Tracking_1_1ObjectTracker.html#3cbe019718e11ae54febe47e3df89985">probabilityOfNewPosition</a>(CvRect, CvRect); <span class="comment">//return value [0, 1] of probability</span>
+<a name="l00094"></a>00094             
+<a name="l00095"></a>00095         };
+<a name="l00096"></a>00096     } <span class="comment">// namespace Tracking </span>
+<a name="l00097"></a>00097 } <span class="comment">// namespace OpenCV</span>
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099 <span class="preprocessor">#endif // ObjectTracker_h</span>
+<a name="l00100"></a>00100 <span class="preprocessor"></span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Mon May 4 16:11:20 2009 para CVTrackpad por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>
